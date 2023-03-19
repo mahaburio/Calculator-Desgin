@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <link
+      rel="stylesheet"
+      href=""
+    />
+    <style>
+      .container {
+        
+      }
+      .container .header {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container .header .calculator {
+        height: 400px;
+        width: 350px;
+        margin-top: 20px;
+        border-radius: 5px;
+        background-color: rgb(240, 234, 226);
+        position: relative;
+        box-shadow: 0px 0px 10px #000;
+      }
+      .header .calculator .cal-head input {
+        width: 90%;
+        height: 50px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        box-shadow: 0px 0px 5px #000;
+        margin-left: 11px;
+        margin-top: 40px;
+        font-size: 25px;
+        padding-left: 10px;
+      }
+
+      button {
+        width: 58px;
+        height: 40px;
+        font-size: 20px;
+        font-weight: 700;
+        border: none;
+        box-shadow: 0px 0px 2px #000;
+        border-radius: 2px;
+        margin-top: 10px;
+        
+      }
+
+      .cals{
+        margin: 20px;
+      }
+
+      button:hover{
+        box-shadow: 0px 0px 10px #000;
+        /* transform: translateY(-2px); */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="calculator">
+          <div class="cal-head">
+            <input id="valueShowBox" type="" placeholder="0"  readonly/>
+            <div class="cals">
+              <div class="m-sec ms-3 mt-3">
+                <button style="color: red;">M+</button>
+                <button style="color: red;">M-</button>
+                <button style="color: red;">MRC</button>
+                <button id="btnSlice" style="color: red;">CE</button>
+                <button id="btnClear" style="color: #fff;background-color: red;">C</button>
+               </div>
+               <div class="m-sec ms-3 mt-3">
+                 <button id="btnSeven" style="color: #000;">7</button>
+                 <button id="btnEight" style="color: #000;">8</button>
+                 <button id="btnNine" style="color: #000;">9</button>
+                 <button id="btnMultiplication" style="color: #000;background-color: rgb(256,199,159);">x</button>
+                 <button id="btnSubstraction" style="color: #000;background-color: rgb(256,199,159)">-</button>
+               </div>
+               <div class="m-sec ms-3 mt-3">
+                 <button id="btnFour" style="color: #000;">4</button>
+                 <button id="btnFive" style="color: #000;">5</button>
+                 <button id="btnSix" style="color: #000;">6</button>
+                 <button id="btnDivision" style="color: #000;background-color: rgb(256,199,159);">/</button>
+                 <button id="btnAddition" style="color: #000;background-color: rgb(256,199,159)">+</button>
+               </div>
+               <div class="m-sec ms-3 mt-3">
+                 <button id="btnOne" style="color: #000;">1</button>
+                 <button id="btnTwo" style="color: #000;">2</button>
+                 <button id="btnThree" style="color: #000;">3</button>
+                 <button id="btnPersent" style="color: #000;background-color: rgb(256,199,159);">%</button>
+                 
+               </div>
+               <div class="m-sec ms-3 mt-3">
+                 <button id="btnZero" style="color: #000;">0</button>
+                 <button id="btnDblZero" style="color: #000;">00</button>
+                 <button id="btnDot" style="color: #000;">.</button>
+                 <button style="color: #000;background-color: rgb(256,199,159);">int</button>
+               </div>
+            </div>
+            
+          </div>
+          <button id="btnEqual" style="color: #fff;background-color: rgb(2, 150, 2);height: 95px; margin-top: 5px; position: absolute;bottom: 35px;right: 23px;">=</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
